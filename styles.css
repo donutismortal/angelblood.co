@@ -129,7 +129,7 @@ button:hover{
 
 p {
   font-family: "EB Garamond";
-  font-size: large;
+  font-size: 25px;
   margin: 20px;  
   text-indent: 30px;
 }
@@ -137,12 +137,22 @@ p {
 .empty-space {
   display: flex;
   justify-content: center;
-  margin: 10%;
+  margin: 100px;
+}
+.empty-space2 {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.empty-space3 {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
 
 h2 {
   font-family: "EB Garamond";
-  font-size: x-large;
+  font-size: 40px;
   margin: 15px;  
 }
 
@@ -158,6 +168,19 @@ h3 {
   margin: 10px;
   font-family: "Bitcount Prop Single";
   font-weight: 300;
-  font-size: xx-large;
+  font-size: 35px;
   color: white;
+}
+
+a i{
+  color: magenta;
+  font-size: 40px;
+}
+a i:hover{
+  color: green;
+  font-size: 40px;
+}
+
+.poem {
+  font-size: 16px;
 }
