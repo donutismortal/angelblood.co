@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/a935cc6ef4.js" crossorigin="anonymous"></script>
     <style>
-        p {color: white; margin-bottom: 50px;}
+        .popup2 {visibility: visible;}
     </style>
 </head>
 <body style="background-color: darkslategray;">
@@ -29,61 +29,185 @@
     </header>
 
     <div class="empty-space2" id="top"></div>
-     <div class="empty-space"><h1 style="color: white; font-size: 40px;" >2025</h1></div>
+    <div class="empty-space"><h1 style="color: white; font-size: 40px;" >2025</h1></div>
 
-    <main>
-        <img class="image" src="https://donutismoral.neocities.org/jesus.jpg" alt="painting of a nude model holding a staff">
-        <h3>Jesus Portrait</h3>
-        <p> 
-            Acrylic on canvas. I made this painting for a painting elective my freshman year of college. 
-            I was trying to experiment with layers of transluscent paint to create skin tones.
-        </p>
+     <main>
+        <div class="row">   
+            <div class="column">
+                <img onclick="openpop()" src="https://donutismoral.neocities.org/jesus.jpg" alt="painting of a nude model holding a staff">
 
-        <img class="image" src="https://donutismoral.neocities.org/selfportrait3.jpg" alt="self portrait with vibrant colors and a mirror on the ceiling">
-        <h3>Self Portrait at a Rave</h3>
-        <p> 
-            Acrylic, paint pen, glitter glue, and oil pastel on canvas. Made for that same painting class. 
-            With this one I wanted to really put myself into a painting.
-        </p>
+                <img onclick="openpop5()" src="https://donutismoral.neocities.org/aliencover.png" alt="chaotic cartoon drawing of an alien">
+                <div class="gallery-nonimg"><iframe style="border: 0; width: 100%; height: 42px; " src="https://bandcamp.com/EmbeddedPlayer/album=3980081948/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://donutismortal.bandcamp.com/album/alien-cool-peoples-longer-version">ALIEN - cool peoples longer version by Angel Blood</a></iframe></div>                
+            </div>
+            <div class="column">
+                <img onclick="openpop2()" src="https://donutismoral.neocities.org/selfportrait3.jpg" alt="self portrait with vibrant colors and a mirror on the ceiling">
+                <img onclick="openpop7()" src="https://donutismoral.neocities.org/nudeinchair.jpg" alt="Nude figure in chair">
+            </div>
+            <div class="column">
+                <img onclick="openpop3()" src="https://donutismoral.neocities.org/selfportrait4.jpg" alt="the scream painting but with a lot of neon green">
+                <iframe class="gallery-nonimg" width="560" height="315" src="https://www.youtube.com/embed/7735KuiM1nA?si=DOSRhuse6Hg3YsmW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="column">
 
-        <img class="image" src="https://donutismoral.neocities.org/selfportrait4.jpg" alt="the scream painting but with a lot of neon green">
-        <h3>Self Portrait as Edvard Munch</h3>
-        <p> 
-            Acrylic, paint pen, and oil pastel on canvas. A "master copy" of the famous Edvard Munch 
-            painting 'The Scream.'
-        </p>
+                <img onclick="openpop4()" src="https://donutismoral.neocities.org/finalpaintingfa25.jpg" alt="busy still life featuring a skeleton">   
+                <img onclick="openpop6()" src="https://donutismoral.neocities.org/fish.jpg" alt="fish painting">       
+            </div>
+        </div>
 
-        <img class="image" src="https://donutismoral.neocities.org/aliencover.png" alt="chaotic cartoon drawing of an alien">
-        <div class="image"><iframe style="border: 0; width: 100%; height: 42px; " src="https://bandcamp.com/EmbeddedPlayer/album=3980081948/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://donutismortal.bandcamp.com/album/alien-cool-peoples-longer-version">ALIEN - cool peoples longer version by Angel Blood</a></iframe></div>
-        <h3>Alien</h3>
-        <p> 
-            My second album out under the name Angel Blood, its a bunch of different styles of experimental electronic music.
-        </p>
-        
-        <iframe class="image" width="560" height="315" src="https://www.youtube.com/embed/7735KuiM1nA?si=DOSRhuse6Hg3YsmW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <h3>Glitter</h3>
-        <p> 
-            Music video I made for class. The premise or the video is that the main character smokes glitter goes insane.
-        </p>    
-        
-        <img class="image" src="https://donutismoral.neocities.org/nudeinchair.jpg" alt="Nude figure in chair">
-        <h3>Figure Study in Chair</h3>
-        <p> 
-            Acrylic and oil on canvas. At the point of this painting I've done a lot of figure paintings. 
-            I wanted to add this peice to show my improvment from the first figure painting I put on here.
-        </p>
 
-        <img class="image" src="https://donutismoral.neocities.org/finalpaintingfa25.jpg" alt="busy still life featuring a skeleton">
-        <h3>FA25 Final</h3>
-        <p> 
-            The big one!! This was the last painting I made in 2025 I made it as the final assignment for my first 
-            painting major class.
-        </p>        
-    </main>
+
+        <div class="pop" id="pop">
+            <div>
+                <img src="https://donutismoral.neocities.org/jesus.jpg" alt="painting of a nude model holding a staff">
+            </div>
+            <div>  
+                <button class="closebutton" onclick="closepop()"><i class="fa-solid fa-x"></i></button>
+                <h3>Jesus Portrait</h3>
+                <p> 
+                    Acrylic on canvas. I made this painting for a painting elective my freshman year of college. 
+                    I was trying to experiment with layers of transluscent paint to create skin tones.
+                </p>
+            </div>
+        </div>
+
+        <div class="pop" id="pop2">
+            <div>
+                <img onclick="openpop2()" src="https://donutismoral.neocities.org/selfportrait3.jpg" alt="self portrait with vibrant colors and a mirror on the ceiling">
+            </div>
+            <div>  
+                <button class="closebutton" onclick="closepop2()"><i class="fa-solid fa-x"></i></button>
+                <h3>Self Portrait at a Rave</h3>
+                <p> 
+                    Acrylic, paint pen, glitter glue, and oil pastel on canvas. Made for that same painting class. 
+                    With this one I wanted to really put myself into a painting.
+                </p>
+            </div>
+        </div>
+
+        <div class="pop" id="pop3">
+            <div>
+                <img class="image" src="https://donutismoral.neocities.org/selfportrait4.jpg" alt="the scream painting but with a lot of neon green">
+    
+            </div>
+            <div>  
+                <button class="closebutton" onclick="closepop3()"><i class="fa-solid fa-x"></i></button>
+                <h3>Self Portrait as Edvard Munch</h3>
+                <p> 
+                    Acrylic, paint pen, and oil pastel on canvas. A "master copy" of the famous Edvard Munch 
+                    painting 'The Scream.'
+                </p>
+            </div>
+        </div>
+
+        <div class="pop" id="pop4">
+            <div>
+                <img class="image" src="https://donutismoral.neocities.org/finalpaintingfa25.jpg" alt="busy still life featuring a skeleton">
+            </div>
+            <div>  
+                <button class="closebutton" onclick="closepop4()"><i class="fa-solid fa-x"></i></button>
+                <h3>FA25 Final</h3>
+                <p> 
+                    The big one!! This was the last painting I made in 2025 I made it as the final assignment for my first 
+                    painting major class.
+                </p>     
+            </div>
+        </div>        
+
+        <div class="pop" id="pop5">
+            <div>
+                <img class="image" src="https://donutismoral.neocities.org/aliencover.png" alt="chaotic cartoon drawing of an alien">
+
+            </div>
+            <div>  
+                <button class="closebutton" onclick="closepop5()"><i class="fa-solid fa-x"></i></button>
+                <h3>Alien</h3>
+                <p> 
+                    My second album out under the name Angel Blood, its a bunch of different styles of experimental electronic music.
+                </p>
+            </div>
+        </div>   
+
+        <div class="pop" id="pop6" style="background-image: url('https://donutismoral.neocities.org/fish-background.png')">
+            <button class="closebutton" onclick="closepop6()"><i class="fa-solid fa-x"></i></button>
+            <a><h3>donut loves you</h3></a>
+        </div>
+
+        <div class="pop" id="pop7">
+            <div>
+                <img class="image" src="https://donutismoral.neocities.org/nudeinchair.jpg" alt="Nude figure in chair">
+            </div>
+            <div>  
+                <button class="closebutton" onclick="closepop7()"><i class="fa-solid fa-x"></i></button>
+                <h3>Figure Study in Chair</h3>
+                <p> 
+                    Acrylic and oil on canvas. At the point of this painting I've done a lot of figure paintings. 
+                    I wanted to add this peice to show my improvment from the first figure painting I put on here.
+                </p>
+
+            </div>
+        </div>   
+
+
+
+
+    <script>
+        let popup = document.getElementById("pop")
+        function openpop(){
+            popup.classList.add("popup")
+        }
+        function closepop(){
+            popup.classList.remove("popup")
+        }
+        let popup2 = document.getElementById("pop2")
+        function openpop2(){
+            popup2.classList.add("popup")
+        }
+        function closepop2(){
+            popup2.classList.remove("popup")
+        }
+        let popup3 = document.getElementById("pop3")
+        function openpop3(){
+            popup3.classList.add("popup")
+        }
+        function closepop3(){
+            popup3.classList.remove("popup")
+        }
+        let popup4 = document.getElementById("pop4")
+        function openpop4(){
+            popup4.classList.add("popup")
+        }
+        function closepop4(){
+            popup4.classList.remove("popup")
+        }        
+        let popup5 = document.getElementById("pop5")
+        function openpop5(){
+            popup5.classList.add("popup")
+        }
+        function closepop5(){
+            popup5.classList.remove("popup")
+        }        
+        let popup6 = document.getElementById("pop6")
+        function openpop6(){
+            popup6.classList.add("popup")
+        }
+        function closepop6(){
+            popup6.classList.remove("popup")
+        } 
+                let popup7 = document.getElementById("pop7")
+        function openpop7(){
+            popup7.classList.add("popup")
+        }
+        function closepop7(){
+            popup7.classList.remove("popup")
+        }                               
+
+    </script>
+    
+
 
     <div class="empty-space"> 
         <img style="width: 30px; margin: 10px;" src="https://donutismoral.neocities.org/glorb.png" alt="glorb">
-        <a href="#top"><img style="width: 30px; margin: 10px;" src="https://donutismoral.neocities.org/glorb.png" alt="glorb"></a>
+        <a href="#top" style="margin: 0; padding: 0;"><img style="width: 30px; margin: 10px;" src="https://donutismoral.neocities.org/glorb.png" alt="glorb"></a>
         <img style="width: 30px; margin: 10px;" src="https://donutismoral.neocities.org/glorb.png" alt="glorb">
     </div>
 
