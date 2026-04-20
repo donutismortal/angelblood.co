@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" type="image/x-icon" href="https://donutismoral.neocities.org/glorb.png">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a935cc6ef4.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="center-body" style="background-color: yellowgreen;">
+    <button onclick="openpop()">test</button>
+    <div class="pop" id="pop">
+        <div>
+            <img src="https://donutismortal.neocities.org/image/angel/jesus.jpg" alt="painting of a nude model holding a staff">
+        </div>
+        <div>
+            <button class="closebutton" onclick="closepop()"><i class="fa-solid fa-x"></i></button>
+            <h3>Jesus Portrait</h3>
+            <p> 
+                Acrylic on canvas. I made this painting for a painting elective my freshman year of college. 
+                I was trying to experiment with layers of transluscent paint to create skin tones.
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        let popup = document.getElementById("pop")
+        function openpop(){
+            popup.classList.add("popup")
+        }
+        function closepop(){
+            popup.classList.remove("popup")
+        }
+    </script>
+</body>
+
+</html>
